@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <title>La Rosa</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Inicio</a></li>
+                <li> <a href="carta.html">Carta</a></li>
+                <li>Reservacion</li>
+                <li><a href="contacto.html">Contacto</a></li>  
+            </ul>
+        </nav>
+        <div class="inicio">
+            <img src="Media/Portada.png" width=1560px height="350px" alt="PortadaGeneral">
+            <div class="portadaPrincipal">
+                <h1><i><u>La Rosa</u></i></h1>
+                <h2>Restaurante</h2>
+            </div>
+        </div>
+
+    </header> 
+    <main>
+        <section class="reserva">
+            <h2><u>Reservacion</u></h2>
+            <br>
+            <form action="">
+            <fieldset>
+                <legend>Complete con sus datos</legend>
+                <br>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname">
+                </div>
+                <br>
+                <div>
+                    <label for="celular" placeholder="Celular">Celular </label>
+                    <input type="celular" name="celular" required>
+                </div>
+                <br>
+                </div><br>
+                <div>
+                    <label for="reservar">Reservacion para</label>
+                    <input type="radio" value="Una persona" name="reservar">Una persona
+                    <input type="radio" value="Dos/Tres personas" name="reservar">Dos/Tres personas
+                    <input type="radio" value="Cuatro/Cinco personas" name="reservar">Cuatro/Cinco personas
+                    <input type="radio" value="Mas" name="reservar">Mas
+                </div>
+                <br>
+                <div>
+                    <label for="nac">Dia que quiere Reservar</label>
+                    <input type="date" name="nac">
+                    
+                </div>
+                <br>
+                <div>
+                    <label for="horario">Horario</label>
+                    <select name="horario">
+                        <option value="19:00hrs">19:00hrs</option>
+                        <option value="20:00hrs">20:00hrs</option>
+                        <option value="21:00hrs">21:00hrs</option>
+                        <option value="22:00hrs">22:00hrs</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="coment"> Agregar un comentario </label>
+                    <textarea name="coment" id="" cols="30" rows="10"></textarea>
+                    
+                </div>
+                <br>
+             
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="borrar">
+                </div>
+
+            </fieldset>
+            </form>
+        <section>
+     
+    </main>
+    <hr>
+    <footer>
+
+        <h3><i>Locacion</i></h3>
+        <h4>San Lorenzo 1634 - Buenos Aires</h4>
+        <h4>Av. Cazadores 663 - Cordoba</h4>
+        <h3><i>Horario de Atencion</i></h3>
+        <h4>Lunes a Jueves: 20:00hrs a 01:00hrs</h4>
+        <h4>Viernes a Dominingo: 19:00hrs a 02:00hrs</h4>
+    </footer>
+
+    
+</body>
+</html>
