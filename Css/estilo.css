@@ -78,13 +78,20 @@ section{
     margin: 0.5rem;
     padding: 0.5rem;
 }
+.platos:hover{
+    background-color: rgb(19, 18, 18);
+    transition: 2s;
+}
 .reseñas{
     text-align: center;
     grid-column-start: 2;
     grid-row-end: -1;
     margin: 0.5rem;
     padding: 0.5rem;
-
+}
+.reseñas:hover{
+    background-color: rgb(19, 18, 18);
+    transition: 2s;
 }
 
 .reserva{
@@ -102,6 +109,7 @@ section{
     text-align: center;
     letter-spacing: 1px;
     line-height: 25px;
+    background-color: rgb(19, 18, 18);
 }
 .contenedorCarta{
     display: grid;
@@ -116,6 +124,10 @@ section{
     letter-spacing: 1px;
     line-height: 25px;
 }
+.carta1:hover{
+    background-color: rgb(19, 18, 18);
+    transition: 2s;
+}
 .carta2{
     grid-column-start: 2;
     grid-row-end: -2;
@@ -124,6 +136,11 @@ section{
     letter-spacing: 1px;
     line-height: 25px;
 }
+.carta2:hover{
+    background-color: rgb(19, 18, 18);
+    transition: 2s;
+}
+
 .contacto{
     margin: 0.5rem;
     padding: 0.5rem;
@@ -135,8 +152,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 
@@ -171,15 +188,24 @@ footer{
         padding: 0.5rem;
     
     }
+    .platos:hover{
+        background-color: rgb(19, 18, 18);
+        transition: 2s;
+    }
     .reseñas{
         text-align: center;
         margin: 0.5rem;
         padding: 0.5rem;
     }
+    .reseñas:hover{
+        background-color: rgb(19, 18, 18);
+        transition: 2s;
+    }
     .carta{
         text-align: center;
         letter-spacing: 1px;
         line-height: 25px;
+        background-color: rgb(19, 18, 18);
     }
     .contenedorCarta{
         display: grid;
@@ -194,6 +220,10 @@ footer{
         letter-spacing: 1px;
         line-height: 25px;
     }
+    .carta1:hover{
+        background-color: rgb(19, 18, 18);
+        transition: 2s;
+    }
     .carta2{
         grid-column-start: 2;
         grid-row-end: -2;
@@ -202,12 +232,16 @@ footer{
         letter-spacing: 1px;
         line-height: 25px;
     }
+    .carta2:hover{
+        background-color: rgb(19, 18, 18);
+        transition: 2s;
+    }
     footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
-        margin: 0.5rem;
-        padding: 0.5rem;
+        margin: 1rem;
+        padding: 1rem;
     }
     
 }
