@@ -3,120 +3,164 @@
     padding: 0;
 }
 
+/* General*/
+
 body{
     font-family: 'Cinzel', serif;
-    letter-spacing: 2px;
-    color: beige;
-    background: rgb(69,72,77);
-    background: -moz-linear-gradient(top,  rgba(69,72,77,1) 8%, rgba(0,0,0,1) 99%);
-    background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 8%,rgba(0,0,0,1) 99%);
-    background: linear-gradient(to bottom,  rgba(69,72,77,1) 8%,rgba(0,0,0,1) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
-     
+    color: black;
+    background-color: white;
 }
 header{
     text-align: center;
     background-repeat: no-repeat;
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
-    background-color: rgba(20, 20, 20, 0.719);
+
+.navbar{
+    margin: 10px;
+    letter-spacing: 1px;
 }
-nav ul{
-    display: flex;
-    flex-direction: wrap;
-}
-  
-li{
-    list-style: none;
-    margin: 0.4rem;
+.text-center{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-section{
+.carousel-item{
+    width: 100%;
+    height: 500px;
+}
+
+/*Cuerpo index principal*/
+
+.bienvenida{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
     letter-spacing: 1px;
     line-height: 30px;
-}
-
-.inicio{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-
-}
-
-.portadaPrincipal{
-    font-family: 'Great Vibes', cursive;
-    font-size: 65px;
-    color: rgb(249, 250, 178);
-    margin: 0rem;
-    padding: 0rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.portada{
-    font-family: 'Great Vibes', cursive;
-    font-size: 65px;
-    color: rgb(249, 250, 178);
-    padding: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
 }
 .contenedor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
+    grid-template-rows: repeat(2, 1fr);   
 }
+
 .platos{
     text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
     margin: 0.5rem;
     padding: 0.5rem;
+    letter-spacing: 2px;
+    line-height: 20px;
 }
-.platos:hover{
-    background-color: rgb(19, 18, 18);
-    transition: 2s;
-}
+
 .reseñas{
     text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
     grid-column-start: 2;
     grid-row-end: -1;
     margin: 0.5rem;
     padding: 0.5rem;
 }
-.reseñas:hover{
-    background-color: rgb(19, 18, 18);
-    transition: 2s;
+.imgCentral{
+    width: 100%;
+    height: 500px;
 }
 
+/*Sobre nosotros*/
+.contenedor1{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    font-size: 25px;
+}
+.contenedor1 h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.historia{
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    line-height: 35px;
+}
+.historia h2{
+    text-align: left;
+    margin: 1rem;
+}
+
+.historia img{
+    width: 500px;
+    float: left;
+    
+}
+.historia2{
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    line-height: 35px;
+}
+.historia2 h2{
+    text-align: right;
+    margin: 1rem;
+}
+.historia2 img{
+    width: 500px;
+    float: right;
+}
+
+/*Rervaciones*/
+
+.reservaTitulo{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 23px;
+}
 .reserva{
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 25px;
-    margin: 0.5;
-    padding: 0.5rem;
+    margin-left: 2rem; 
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    border-style: solid;
 }
+.texto2{
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+
+/*Carta*/
+
 .cuerpo{
     margin: 0.5rem;
     padding: 0.5rem;
 }
-
 .carta{
     text-align: center;
     letter-spacing: 1px;
     line-height: 25px;
-    background-color: rgb(19, 18, 18);
+    font-size: 20px;
+    margin: 1rem;
+    margin-bottom: 5rem;
 }
 .contenedorCarta{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
     text-align: center;
+    margin-bottom: 5rem;
 }
 .carta1{
     border: 5px rgb(238, 226, 117);
@@ -124,10 +168,7 @@ section{
     letter-spacing: 1px;
     line-height: 25px;
 }
-.carta1:hover{
-    background-color: rgb(19, 18, 18);
-    transition: 2s;
-}
+
 .carta2{
     grid-column-start: 2;
     grid-row-end: -2;
@@ -136,10 +177,8 @@ section{
     letter-spacing: 1px;
     line-height: 25px;
 }
-.carta2:hover{
-    background-color: rgb(19, 18, 18);
-    transition: 2s;
-}
+
+/*Contacto*/
 
 .contacto{
     margin: 0.5rem;
@@ -148,12 +187,35 @@ section{
     line-height: 25px;
 }
 
+/*Footer General*/
+
 footer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(37, 36, 36);
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+.footer-medio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: white;
+    font-size: 45px;
+}
+.footer-img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.footer-detalles{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 15px;
     margin: 1rem;
-    padding: 1rem;
 }
 
 
@@ -163,56 +225,150 @@ footer{
         text-align: center;
         background-repeat: no-repeat;
     }
-    nav{
-        display: flex;
-        justify-content: flex-end;
-        background-color: rgba(20, 20, 20, 0.719);
+    .navbar{
+        margin: 10px;
+        letter-spacing: 1px;
     }
-    nav ul{
-        display: flex;
-        flex-direction: wrap;
+    .text-center{
+        color: white;
+        font-family: 'Great Vibes', cursive;
+        font-size: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    section{
-        
+    .carousel-item{
+        width: 100%;
+        height: 500px;
+    }
+    /*Cuerpo index principal*/
+
+    .bienvenida{
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
         letter-spacing: 1px;
         line-height: 30px;
     }
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);   
     }
+
     .platos{
         text-align: center;
+        letter-spacing: 1px;
+        line-height: 20px;
         margin: 0.5rem;
         padding: 0.5rem;
-    
+        letter-spacing: 2px;
+        line-height: 20px;
     }
-    .platos:hover{
-        background-color: rgb(19, 18, 18);
-        transition: 2s;
-    }
+
     .reseñas{
         text-align: center;
+        letter-spacing: 1px;
+        line-height: 30px;
+        grid-column-start: 2;
+        grid-row-end: -1;
         margin: 0.5rem;
         padding: 0.5rem;
     }
-    .reseñas:hover{
-        background-color: rgb(19, 18, 18);
-        transition: 2s;
+    .imgCentral{
+        width: 100%;
+        height: 500px;
+    }
+
+    /*Sobre nosotros*/
+    .contenedor1{
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        text-align: center;
+        font-size: 25px;
+    }
+    .contenedor1 h1{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .historia{
+        font-size: 20px;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        line-height: 35px;
+    }
+    .historia h2{
+        text-align: left;
+        margin: 1rem;
+    }
+
+    .historia img{
+        width: 500px;
+        float: left;
+        
+    }
+    .historia2{
+        font-size: 20px;
+        margin-top: 3rem;
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+        line-height: 35px;
+    }
+    .historia2 h2{
+        text-align: right;
+        margin: 1rem;
+    }
+    .historia2 img{
+        width: 500px;
+        float: right;
+    }
+
+    /*Rervaciones*/
+
+    .reservaTitulo{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        font-size: 23px;
+    }
+    .reserva{
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        margin-left: 2rem; 
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        border-style: solid;
+    }
+    .texto2{
+        margin-left: 1rem;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        
+    }
+
+    /*Carta*/
+
+    .cuerpo{
+        margin: 0.5rem;
+        padding: 0.5rem;
     }
     .carta{
         text-align: center;
         letter-spacing: 1px;
         line-height: 25px;
-        background-color: rgb(19, 18, 18);
+        font-size: 20px;
+        margin: 1rem;
+        margin-bottom: 5rem;
     }
     .contenedorCarta{
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        gap: 10px;
+        grid-template-columns: repeat(3, auto);
+        gap: 20px;
         text-align: center;
+        margin-bottom: 5rem;
     }
     .carta1{
         border: 5px rgb(238, 226, 117);
@@ -220,10 +376,7 @@ footer{
         letter-spacing: 1px;
         line-height: 25px;
     }
-    .carta1:hover{
-        background-color: rgb(19, 18, 18);
-        transition: 2s;
-    }
+
     .carta2{
         grid-column-start: 2;
         grid-row-end: -2;
@@ -232,16 +385,44 @@ footer{
         letter-spacing: 1px;
         line-height: 25px;
     }
-    .carta2:hover{
-        background-color: rgb(19, 18, 18);
-        transition: 2s;
+
+    /*Contacto*/
+
+    .contacto{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        letter-spacing: 2px;
+        line-height: 25px;
     }
+
+    /*Footer General*/
+
     footer{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        background-color: rgb(37, 36, 36);
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+    .footer-medio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        color: white;
+        font-size: 45px;
+    }
+    .footer-img{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .footer-detalles{
+        color: white;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 15px;
         margin: 1rem;
-        padding: 1rem;
     }
     
-}
